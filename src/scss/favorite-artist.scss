@@ -1,0 +1,118 @@
+
+:root{
+  --main-color:white;
+  --main-font:Helvetica;
+}
+
+body{
+  color: black;
+  font-family: var(--main-font);
+}
+
+.menu{
+  width: 100vw;
+
+  &__header{
+    padding-top: 10%;
+    margin-right: 2%;
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-between;
+
+    img{
+      margin-right: 3%;
+      margin-left: 3%;
+    }
+  }
+}
+
+.subheader{
+  display: flex;
+  justify-content: space-around;
+  font-family: var(--main-font);
+  padding-top: 5%;
+  font-weight: bold;
+}
+
+.artist{
+  padding-top: 5%;
+  width: 100vw;
+  display: flex;
+
+  &__img{
+    display:block;
+    position: relative;
+    z-index: 1;
+    margin-right: auto;
+  }
+
+  &__content{
+    width: 100vw;
+    position: absolute;
+    z-index: 2;
+    font-family: var(--main-font);
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 30px;
+  }
+  &__name{
+    margin-top: 20%;
+    align-items: center;
+    width: 7em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &__logos{
+    align-items: center;
+    margin-left: 75%;
+    margin-top: 15%;
+  }
+}
+
+.biography{
+  padding-top: 20%;
+  width: 100vw;
+  background-color: #3E3F41;
+  font-family:var(--main-font);
+}
+
+.block-text{
+  width: 14rem;
+  color: var(--main-color);
+  margin-left: auto;
+  margin-right:auto ;
+  text-align: left;
+  font-weight:lighter ;
+  overflow-wrap:break-word ;
+}
+
+.title{
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20%;
+}
+
+.spotify{
+  font-family:var(--main-font);
+  color: var(--main-color);
+  margin-top: 20%;
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.arrow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 35%;
+  margin-left: 35%;
+  margin-top: 5%;
+  padding-bottom: 20%;
+
+  &__right2--before {
+    display: none;
+  }
+}

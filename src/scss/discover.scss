@@ -1,0 +1,87 @@
+:root{
+  --main-color:white;
+  --main-font:Helvetica;
+}
+
+body{
+  color: white;
+  font-family: var(--main-font)
+}
+
+.menu{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+
+  &__header{
+    padding-top: 10%;
+    margin-right: 2%;
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-between;
+
+    img{
+      margin-right: 3%;
+      margin-left: 3%;
+    }
+  }
+  
+}
+.category{
+  display: flex;
+
+  &__background{
+    display:block;
+
+    z-index: 1;
+    margin-right: auto;
+  }
+
+  &__content{
+    width: 100vw;
+    height: 153px;
+    position: absolute;
+    z-index: 2;
+    font-family: var(--main-font)
+  }
+
+  &__spotify{
+    position: absolute;
+    bottom: 0;
+    right:0;
+    margin-right: 8%;
+    margin-bottom: 3%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__title{
+    margin-top: 2%;
+    margin-left: 2%;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
+
+.musiclist{
+  background-color: #33375A;
+  font-family: var(--main-font);
+  padding-bottom : 30%;
+}
+.songs{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10%;
+
+  h1{
+    font-weight: bold;
+    margin-bottom: 5%;
+  }
+
+  &__options{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
