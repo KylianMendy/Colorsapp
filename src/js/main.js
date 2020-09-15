@@ -1,6 +1,7 @@
 import artist1 from "../img/Fav-artiste-1.png";
-
+import artist2 from "../img/Fav-artiste-2.png";
 import artist3 from "../img/Fav-artiste-3.png";
+
 
 
 
@@ -15,6 +16,10 @@ const $bio = document.getElementById("biography__description");
 const $arrowRight = document.getElementById("arrow-right");
 
 const $arrowRight2 = document.getElementById("arrowRight2");
+
+const $arrowLeft = document.getElementById("arrow-left");
+
+const $arrowLeft2 = document.getElementById('arrow-left2');
 
 const $artist = document.getElementById("artist");
 
@@ -43,6 +48,7 @@ $arrowRight.addEventListener("click",function(){
   $artist.style.display = "flex";
   $arrowRight.style.display= "none";
   $arrowRight2.style.display = "flex"
+  $arrowLeft.style.display = "flex"
   console.log("$arrowRight");
 });
 
@@ -54,6 +60,32 @@ $arrowRight2.addEventListener("click",function(){
     $artistName.textContent = bioArtist3.title;
     $bio.textContent = bioArtist3.biography;
     $artist.style.display = "flex";
+    $arrowLeft.style.display = "none";
+    $arrowLeft2.style.display = "flex";
 });
 
+
+$arrowLeft.addEventListener("click", function(){
+  $biography.style.backgroundColor = "#3E3F41";
+  $artist.style.display = "none";
+  $artistImg.setAttribute("src",artist2 );
+  $artistName.textContent = bioArtist3.title;
+  $bio.textContent = bioArtist3.biography;
+  $artist.style.display = "flex";
+})
+
+
+
+
+$arrowLeft2.addEventListener("click", function(){
+  $biography.style.backgroundColor = "#A38771";
+  $artistImg.setAttribute("src",artist1)
+  $artistName.textContent = bioArtist2.title;
+  $bio.textContent = bioArtist2.biography;
+  $artist.style.display = "flex";
+  $arrowRight.style.display= "none";
+  $arrowRight2.style.display = "flex";
+  $arrowLeft.style.display = "flex";
+  console.log("arrowleft");
+})
   

@@ -13,13 +13,7 @@ $swipe.addEventListener('click', function homeswitch(){
 })
 
 
-$home.addEventListener('click', function (){
-  $container.style.zIndex = "-1";
-  console.log('hello');
-})
-
-// async function asyncCall(){
-//   const stop = await homeswitch ();
-//   $container.style.display = "none";
-// }
-
+if (!localStorage.getItem('pageSeen')) {
+  $container.style.display='flex';
+  localStorage.setItem('pageScreen', true);
+}
