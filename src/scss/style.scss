@@ -10,15 +10,35 @@
   display: none;
 
   .logo{
-   margin: auto;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 80%;
+   margin-bottom:20%;
    width: 300px;
+   @media(min-width:768px) {
+     margin: auto;
    }
-  
-   .swipe{
+   }
+  .advice{
+    margin-left: auto;
+    margin-right: auto;
+    width: 20rem;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: Helvetica;
+    text-align: center;
+    @media(min-width:768px) {
+      margin: auto;
+    }
+  }
+  .swipe{
     justify-content: flex-end;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 10%;
+    margin-top: 50%;
+    @media(min-width:768px) {
+      margin: auto;
+    }
   }
 }
 
